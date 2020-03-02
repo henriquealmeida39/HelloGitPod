@@ -1,6 +1,6 @@
 tasks:
-- init: >
-    mkdir \build &&
-    cd \build &&
-    cmake -D CMAKE_EXPORT_COMPILE_COMMANDS=ON .. &&
-    make
+  - init: >
+      mkdir \build && cd \build && cmake -D CMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+      && make
+image:
+  file: .gitpod.Dockerfile
